@@ -1,0 +1,60 @@
+body {
+  margin: 20px;
+  padding: 0;
+  font-family: sans-serif;
+  align-items: flex-end;
+}
+.clear {
+  clear: both;
+  content: ""
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.game-info {
+  min-height: 50px;
+  text-align: center;
+  
+}
+
+.board {
+  display: flex;
+  justify-content: center;
+}
+
+.game-board {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.cell {
+  background: rgb(185, 159, 209);
+  border: 1px solid red;
+  line-height: 34px;
+  height: 34px;
+  text-align: center;
+  width: 34px;
+  cursor: pointer;
+  }
+
+.cell:focus {
+  outline: none;
+}
+
+.hidden {
+  background: gold;
+}
+
+.is-flag,
+.is-mine {
+  color: #593cfc;
+}
